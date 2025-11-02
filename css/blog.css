@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 120px;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.hero {
+    background: url('../img/blog-banner.jpg') no-repeat center center/cover;
+    color: #333;
+    padding: 30px 0;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.blog-container, .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px; /* Original padding */
+    gap: 30px;
+}
+.blog-post {
+    background: white;
+    width: 300px;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-post h2 {
+    color: #007bff;
+    font-size: 20px;
+}
+
+.blog-post p {
+    color: #555;
+    font-size: 16px;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background: #007bff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-post a:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column; /* Stack blog posts vertically */
+        padding: 20px; /* Adjust padding */
+    }
+    .blog-post {
+        width: 100%; /* Allow full width for blog posts */
+        margin-bottom: 20px; /* Add spacing between posts */
+    }
+}

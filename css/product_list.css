@@ -1,0 +1,142 @@
+/* productlist.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin-top: 120px;
+    padding: 0;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-btn:hover {
+    background: #0056b3;
+}
+
+/* Search Suggestions */
+#suggestions {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#suggestions div:hover {
+    background: #f0f0f0;
+}
+
+/* Product Grid */
+.container {
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 70px; /* Original gap */
+    justify-items: center; /* Center items in the grid */
+}
+.product-card {
+    width: 100%; /* Ensure cards take full width of grid cell */
+    max-width: 250px; /* Set a maximum width for product cards */
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    color: green;
+    font-weight: bold;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack products vertically */
+        gap: 20px; /* Adjust gap */
+    }
+    .container {
+        padding: 10px; /* Adjust padding */
+    }
+}

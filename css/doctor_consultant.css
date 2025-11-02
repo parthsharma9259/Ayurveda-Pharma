@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+p {
+    color: #555;
+}
+
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px; /* Original margin */
+}
+
+.doctor-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.doctor-card h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.doctor-card p {
+    color: #777;
+}
+
+.book-btn {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background: #218838;
+}
+
+@media (max-width: 768px) {
+    .doctor-container {
+        flex-direction: column; /* Stack doctor cards vertically */
+        align-items: center; /* Center align cards */
+        margin: 10px; /* Adjust margin */
+    }
+    .doctor-card {
+        width: 90%; /* Allow full width for doctor cards */
+        margin: 10px 0; /* Adjust margin */
+    }
+}
