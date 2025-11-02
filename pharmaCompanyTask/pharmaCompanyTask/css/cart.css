@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 120px;
+}
+
+#cart-container {
+    align-items: center;
+    width: 80%;
+    margin: 20px auto; /* Original margin */
+background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-items {
+    justify-content: center; /* Center items */
+    align-items: center; /* Center items vertically */
+    border: 5px  solid b;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Increased padding for larger box size */
+
+    border: 1px solid #ddd; /* Add border around each cart item */
+    border-radius: 5px; /* Optional: add rounded corners */
+    margin-bottom: 15px; /* Increased margin for more space between items */
+
+    background-color: #f9f9f9; /* Optional: add background color */
+
+}
+
+.cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#checkout-btn {
+    background: #008080;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    #cart-container {
+        width: 95%; /* Make the cart container take more width on smaller screens */
+        margin: 10px auto; /* Adjust margin */
+    }
+    .cart-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .cart-item img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+        align-items: flex-start; /* Align items to the start */
+    }
+    .cart-item img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

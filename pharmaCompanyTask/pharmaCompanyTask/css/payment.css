@@ -1,0 +1,135 @@
+/* payment.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.payment-container {
+    background: white;
+    width: 400px; /* Original width */
+    padding: 20px; /* Original padding */
+    margin: 40px auto; /* Original margin */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+    color: #007bff;
+}
+
+#product-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#product-details img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width:100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+#product-summary{
+    margin-left: 25%;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; 
+}
+
+#details-container{
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; 
+}
+#payment-container{
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; 
+}
+#place-order{
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; 
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+tr, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .payment-container {
+        width: 90%; /* Allow full width for payment container */
+        margin: 20px auto; /* Center align container */
+        padding: 15px; /* Adjust padding */
+    }
+    #product-details img {
+        width: 80px; /* Adjust image size for smaller screens */
+    }
+}

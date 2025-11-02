@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma- Home</title>
+  <link rel="icon" href="../img/logo.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/blog.css">
+
+</head>
+<body>
+  <header class="header">
+    <div class="left">
+      <a href="../index.html">
+        <img src="../img/logo.jpg" alt="Logo">
+      </a>
+      <p><a href="../index.html">Ayurveda Pharma</a></p>
+      <div class="hamburger-menu">☰</div>
+      <div class="menu-items">
+        <div class="head home-btn"><a href="../index.html">Home</a></div>
+        <div class="head about_us-btn"><a href="about_us.html">About Us</a></div>
+        <div class="head product_list-btn"><a href="product_list.html">Product</a></div>
+        <div class="head doctor_consultant-btn"><a href="doctor_consultant.html">Doctor Consultant</a></div>
+      </div>
+    </div>
+    <div class="right">
+      <a href="#" id="login-btn">
+        <i class="fas fa-user"></i>
+      </a>
+      <a href="cart.html">
+        <i class="fas fa-cart-shopping">
+          <span id="cart-count" class="cart-badge"></span>
+        </i>
+      </a>
+    </div>
+  </header>
+  <div class="dropdown-menu">
+    <div class="dropdown-content">
+        <div class="close-btn">x</div>
+        <div class="head home-btn"><a href="../index.html">Home</a></div>
+        <div class="head about-btn"><a href="about_us.html">About Us</a></div>
+        <div class="head product_list-btn"><a href="product_list.html">Product</a></div>
+        <div class="head doctor_consultant-btn"><a href="doctor_consultant.html">Doctor Consultant</a></div>
+    </div>
+  </div>
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Please enter your mobile number to login</h2>
+        <input type="tel" id="mobile-number" placeholder="+91">
+        <button id="send-otp">Send OTP</button>
+
+        <div id="otp-section" style="display: none;">
+            <input type="text" id="otp-input" placeholder="Enter OTP">
+            <button id="verify-otp">Verify & Login</button>
+        </div>
+    </div>
+
+</div>
+
+    <main>
+      <section class="blog-container">
+        <section class="hero">
+          <h1>Welcome to Our Health Blog</h1>
+          <p>Stay updated with the latest health tips, Ayurvedic remedies, and wellness trends.</p>
+        </section>
+      </section>
+      <section class="blog-list">
+        <article class="blog-post">
+          <img src= "../img/ayurveda-benefits.jpg" alt="Ayurveda Benefits">
+          <h2>The Power of Ayurveda: Natural Healing</h2>
+          <p>Discover the ancient secrets of Ayurveda and how it helps in balancing the body and mind...</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <img src="../img/immunity-boost.jpeg" alt="Immunity Boost">
+          <h2>5 Natural Ways to Boost Your Immunity</h2>
+          <p>Explore natural herbs and practices that can strengthen your immune system effectively...</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <img src="../img/healthy-lifestyle.jpeg" alt="Healthy Lifestyle">
+          <h2>How to Maintain a Healthy Lifestyle?</h2>
+          <p>Find out the essential habits and diet tips to keep yourself fit and energetic every day...</p>
+          <a href="#">Read More</a>
+        </article>
+        <article class="blog-post">
+          <img src="../img/herbal-remedies.jpeg" alt="Herbal Remedies">
+          <h2>Top 10 Herbal Remedies for Common Ailments</h2>
+          <p>Learn about the best Ayurvedic herbs that can help you with everyday health issues...</p>
+          <a href="#">Read More</a>
+        </article>
+      </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="bottom-container">
+        <div class="bottom-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>                
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Order Medicine</a></li>
+                <li><a href="#">Healthcare Products</a></li>
+                <li><a href="doctor_consultant.html">Doctor Consultancy and Appointments</a></li>
+                <li><a href="#">Healthcare Products</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-section">
+            <h3>Featured Categories</h3>
+            <ul class="featured-categories-grid">
+                <li><a href="#">Must Haves</a></li>
+                <li><a href="#">Heart Care</a></li>
+                <li><a href="#">Diabetic Care</a></li>
+                <li><a href="#">Sexual Wellness</a></li>
+                <li><a href="#">Sports Nutrition</a></li>
+                <li><a href="#">Elderly Care</a></li>
+                <li><a href="#">Personal Care</a></li>
+                <li><a href="#">Healthcare Devices</a></li>
+                <li><a href="#">Health Food and Drinks</a></li>
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Mother and Baby Care</a></li>
+                <li><a href="#">Accessories & Wearables</a></li>
+                <li><a href="#">Vitamins & Supplements</a></li>
+                <li><a href="#">Ayurvedic Care</a></li>
+                <li><a href="#">Health Condition</a></li>
+                <li><a href="#">Homeopathy Care</a></li>
+            </ul>
+        </div>
+
+        <div class="bottom-section">
+            <h3>Need Help</h3>
+            <ul>
+                <li><a href="#">Browse All Medicines</a></li>
+                <li><a href="#">Browse All Molecules</a></li>
+                <li><a href="#">Browse All Cities</a></li>
+                <li><a href="#">Browse All Areas</a></li>
+                <li><a href="#">Browse All Stores</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        
+        <div class="bottom-wrapper">
+            <div class="payment-section">
+                <h3>Our Payment Partners</h3>
+                <div class="payment-icons">
+                    <img src="../img/google-pay-icon.svg" alt="GPay" class="svg-icon">
+                    <img src="../img/paytm-icon.svg" alt="Paytm" class="svg-icon">
+                    <img src="../img/upi-icon.svg" alt="UPI" class="svg-icon">
+                    <img src="../img/razorpay-icon.svg" alt="Razorpay" class="svg-icon">
+                    <img src="../img/card-icon.svg" alt="Mastercard" class="svg-icon">
+                </div>
+            </div>
+            <div class="social-icons">
+                <h3>Follow us on</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Ayurveda Pharma. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/login.js"></script>
+
+  <script src="../js/index.js"></script>
+</body>
+</html>

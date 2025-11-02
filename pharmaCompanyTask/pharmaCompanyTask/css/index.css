@@ -1,0 +1,212 @@
+body{
+    margin-top: 120px;
+}
+.whatsapp{
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+.whatsapp img{
+    width: 50px;
+    height: 50px;
+}
+.search-layout{
+    margin-top: 100px;
+}
+.search-layout>div{
+    width: 70%;
+    margin: 30px auto 0;
+}
+.search-header{
+    display: flex;
+    align-items: center;
+}
+.search-header>h2{
+    font-weight: 600;
+    font-size: 22px;
+}
+.search-header>h2+i{
+    margin-left: auto;
+    margin-right: 8px;
+}
+.search-header>p{
+    margin-right: 10px;
+}
+.search-header>div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.search-header>div>h3,
+.search-header>div>i{
+    color: var(--main-color);
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search-bar{
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    border: 1px lightgrey solid;
+    border-radius: 40px;
+    padding: 4px;
+    box-sizing: border-box;
+    box-shadow: lightgrey 0 0 4px;
+    align-items: center;
+}
+.search-bar>i{
+    margin-left: 30px;
+
+}
+
+.search-bar>input[type="text"]{
+    margin: auto 20px;
+    border: none;
+    outline: none;
+    font-size: 15px; 
+    width: 100%;
+}
+.search-bar>input[type="submit"]{
+    margin-left: auto;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.search-bar ::placeholder{
+    font-size: 14px;
+}
+.second-section{
+    margin-left: 100px;
+}
+.new-user-offer{
+    margin-bottom: 24px;
+}
+
+.cards-layout{
+    display: flex;
+    cursor: pointer;
+}
+.cards-layout>div{
+    width: 330px;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0,0.2) 0px 1px 3px 0px, 
+    rgba(27,31,35,0.15) 0px 0px 0px 1px;
+    display:  flex;
+    padding: 10px;
+    margin-right: 30px;
+    border-radius: 7px;
+    align-items: center;
+}
+.cards-layout>div>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cards-layout>div>p{
+    margin: 0 10px;
+    font-size: 14px;
+    line-height: 25px;
+}
+.cards-layout>div:last-child{
+    background: linear-gradient(to right, rgb(235,250,250), rgb(176,255,255), rgb(176,255.255));
+    display: block;
+    text-align: center;
+}
+.cards-layout>div:last-child>i,
+.cards-layout>div:last-child>p{
+    color: var(--main-color);
+    font-size: 15px;
+}
+
+.cards-layout>div:hover{
+    box-shadow: var(--shadow);
+}
+
+.products-section>.container {
+    max-width: 100%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 70px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    color: green;
+    font-weight: bold;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+@media (max-width: 768px) {
+    .search-layout > div {
+        width: 90%; /* Allow full width for search layout */
+        margin: 20px auto; /* Center align */
+    }
+    .cards-layout {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center align cards */
+    }
+    .cards-layout > div {
+        width: 100%; /* Allow full width for cards */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack products vertically */
+        gap: 20px; /* Adjust gap */
+    }
+}
